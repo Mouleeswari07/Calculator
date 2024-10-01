@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <h1>CALCULATOR</h1>
+    <div class="box">
+        <input type="text" id="display">
+    <br>
+    <div>
+    <input type="button" value="AC" onclick="display.value= '' ">
+    <input type="button" value="DE" onclick="display.value=display.value=tostring().slice(0,-1)">
+    <input type="button" value="." onclick="display.value+= '.' ">
+    <input type="button" value="/" onclick="display.value+= '/' ">
+    <br>
+    </div>
+    <div>
+    <input  type="button" value="7" onclick="display.value+= '7' ">
+    <input type="button" value="8" onclick="display.value+= '8' ">
+    <input type="button" value="9" onclick="display.value+= '9' ">
+    <input type="button" value="*" onclick="display.value+= '*' ">
+    <br>
+    </div>
+    <input type="button" value="6" onclick="display.value+= '6' ">
+    <input type="button" value="5" onclick="display.value+= '5' ">
+    <input type="button" value="4" onclick="display.value+= '4' ">
+    <input type="button" value="-" onclick="display.value+= '-' ">
+    <br>
+    <input type="button" value="3" onclick="display.value+= '3' ">
+    <input type="button" value="2" onclick="display.value+= '2' ">
+    <input type="button" value="1" onclick="display.value+= '1' ">
+    <input type="button" value="+" onclick="display.value+= '+' ">
+    <br>
+    <input type="button" value="00" onclick="display.value+= '00' ">
+    <input type="button" value="0" onclick="display.value+= '0' ">
+    <input type="button" value="=" onclick="display.value=eval(display.value)">
+</div>
+<style>
+        body{
+            justify-content: center;
+            align-items: center;
+            background-color: aquamarine;
+            padding: 7cm;
+            text-align: center;
+            display: flex;
+        }
+        .box {
+            width: 300px;
+            height: 350px;
+            background-color: cadetblue;
+            align-items: center;
+            text-align: center;
+            border: 2px solid;
+            justify-content: center;
+            padding: 20px;
+            border-radius:5px;
+        }
+        input[type="button"] {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+        input[type="text"] {
+            width: 280px;
+            height: 40px;
+            text-align: right;
+            margin-bottom: 10px;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+        h1 {
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            font-size: xx-large;
+            transform: translateX(-50%);
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: darkblue;
+        }
+    </style>
+</body>
+</html>
