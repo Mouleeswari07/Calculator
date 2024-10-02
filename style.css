@@ -1,14 +1,42 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-}
-.body{
-    width: 100%;
-    height:100vh;
-    background-size: cover;
-    background-position: center;
+body{
     justify-content: center;
-    background-color:aqua;
-    padding: 5cm;
+    align-items: center;
+    background-color: rgb(170, 241, 238);
+    padding: 7cm;
+    text-align: center;
+    display: flex;
+}
+.box {
+    width: 300px;
+    height: 350px;
+    background-color: rgb(80, 113, 139);
+    align-items: center;
+    text-align: center;
+    border: 2px solid;
+    justify-content: center;
+    padding: 20px;
+    border-radius:5px;
+}
+input[type="button"] {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border-radius: 5px;
+}
+input[type="text"] {
+    width: 280px;
+    height: 40px;
+    text-align: right;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+h1 {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    font-size: xx-large;
+    transform: translateX(-50%);
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(5, 5, 105, 0.578);
 }

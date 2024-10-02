@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>CALCULATOR</h1>
@@ -38,49 +39,6 @@
     <input type="button" value="0" onclick="display.value+= '0' ">
     <input type="button" value="=" onclick="display.value=eval(display.value)">
 </div>
-<style>
-        body{
-            justify-content: center;
-            align-items: center;
-            background-color: lightblue;
-            padding: 7cm;
-            text-align: center;
-            display: flex;
-        }
-        .box {
-            width: 300px;
-            height: 350px;
-            background-color: rgb(80, 113, 139);
-            align-items: center;
-            text-align: center;
-            border: 2px solid;
-            justify-content: center;
-            padding: 20px;
-            border-radius:5px;
-        }
-        input[type="button"] {
-            width: 50px;
-            height: 50px;
-            margin: 5px;
-            border-radius: 5px;
-        }
-        input[type="text"] {
-            width: 280px;
-            height: 40px;
-            text-align: right;
-            margin-bottom: 10px;
-            font-size: 18px;
-            border-radius: 5px;
-        }
-        h1 {
-            position: absolute;
-            top: 150px;
-            left: 50%;
-            font-size: xx-large;
-            transform: translateX(-50%);
-            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-            color: rgba(5, 5, 105, 0.578);
-        }
-    </style>
+
 </body>
 </html>
